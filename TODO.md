@@ -3,4 +3,4 @@
 - [ ] amountをprivateにする
 - [x] Dollerの副作用をどうする？
 - [ ] Moneyの丸め処理をどうする？
-- [ ] __ equals() __
+- [x] equals()

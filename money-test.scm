@@ -12,6 +12,7 @@
 
 ;; test-equality
 (test-assert "test-equality" (equal? (make-doller 5) (make-doller 5)))
+(test-eq "test-equality" #f (equal? (make-doller 5) (make-doller 6)))
 
 
 (test-end "money-test")
