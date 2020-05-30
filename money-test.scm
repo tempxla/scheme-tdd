@@ -24,7 +24,10 @@
 
 ;; test-make-money-macro
 (let ((test-name "test-make-money-macro"))
-  (test-equal test-name (make-money doller 5) (make-doller 5)))
+  (define-money-type ex-doller)
+  (define money (make-ex-doller 5))
+  (test-eq test-name #t (ex-doller? money))
+  (test-equal test-name 5 (ex-doller-amount money)))
 
 
 (test-end "money-test")
