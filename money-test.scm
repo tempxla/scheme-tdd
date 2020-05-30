@@ -14,5 +14,10 @@
   (test-assert test-name (equal? (make-doller 5) (make-doller 5)))
   (test-eq test-name #f (equal? (make-doller 5) (make-doller 6))))
 
+;; test-franc-multiplication
+(let ((test-name "test-franc-multiplication"))
+  (define five (make-franc 5))
+  (test-equal test-name (make-franc 10) (times five 2))
+  (test-equal test-name (make-franc 15) (times five 3)))
 
 (test-end "money-test")
