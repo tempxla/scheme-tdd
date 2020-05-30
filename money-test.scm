@@ -1,4 +1,5 @@
-(import (srfi 64))
+(import (srfi 64)
+        (money))
 
 (test-begin "money-test")
 
