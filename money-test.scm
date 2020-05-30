@@ -5,10 +5,8 @@
 
 ;; test-multiplication
 (define five (make-doller 5))
-(define product (times! five 2))
-(test-eqv "test-multiplication" 10 (amount product))
-(set! product (times! five 3))
-(test-eqv "test-multiplication" 15 (amount product))
+(test-equal "test-multiplication" (make-doller 10) (times five 2))
+(test-equal "test-multiplication" (make-doller 15) (times five 3))
 
 ;; test-equality
 (test-assert "test-equality" (equal? (make-doller 5) (make-doller 5)))

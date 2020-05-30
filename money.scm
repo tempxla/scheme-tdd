@@ -3,5 +3,5 @@
   doller?
   (_amount amount set-amount!))
 
-(define (times! doller x)
+(define (times doller x)
   (make-doller (* (amount doller) x)))
