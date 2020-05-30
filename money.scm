@@ -1,7 +1,14 @@
 (define-record-type <doller>
   (make-doller _amount)
   doller?
-  (_amount amount set-amount!))
+  (_amount doller-amount))
 
-(define (times doller x)
-  (make-doller (* (amount doller) x)))
+(define-record-type <franc>
+  (make-franc _amount)
+  franc?
+  (_amount franc-amount))
+
+(define (times money x)
+  (cond
+   ((doller? money) (make-doller (* (doller-amount money) x)))
+   ((franc? money) (make-franc (* (franc-amount money) x)))))
