@@ -1,3 +1,8 @@
+(define-syntax make-money
+  (syntax-rules ()
+    ((make-money kind amount)
+     (make-doller amount))))
+
 (define-record-type <doller>
   (make-doller _amount)
   doller?
