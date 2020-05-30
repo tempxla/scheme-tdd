@@ -22,4 +22,9 @@
   (test-equal test-name (make-franc 10) (times five 2))
   (test-equal test-name (make-franc 15) (times five 3)))
 
+;; test-make-money-macro
+(let ((test-name "test-make-money-macro"))
+  (test-equal test-name (make-money doller 5) (make-doller 5)))
+
+
 (test-end "money-test")

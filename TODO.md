@@ -9,3 +9,5 @@
 - [ ] DollerとFrancの重複
 - [x] equalsの一般化
 - [ ] timesの一般化
+
+- [ ] __ make-dollerを汎化する __
