@@ -3,3 +3,5 @@
 - [ ] amountをprivateにする
 - [x] Dollerの副作用をどうする？
 - [ ] Moneyの丸め処理をどうする？
+- [x] equals()
+- [ ] 他のオブジェクトとの等価性比較
