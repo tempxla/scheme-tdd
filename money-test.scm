@@ -23,4 +23,9 @@
   (test-equal test-name (money-franc 10) (times five 2))
   (test-equal test-name (money-franc 15) (times five 3)))
 
+;; test-currency
+(let ((test-name "test-currency"))
+  (test-equal test-name "USD" (currency (money-doller 1)))
+  (test-equal test-name "CHF" (currency (money-franc 1))))
+
 (test-end "money-test")
