@@ -6,7 +6,7 @@
 - [x] equals()
 - [ ] 他のオブジェクトとの等価性比較
 - [x] $5 * 2 = $10
-- [ ] DollerとFrancの重複
+- [ ] __ DollerとFrancの重複 __
 - [x] equalsの一般化
 - [ ] timesの一般化
 - [x] DollerとFrancを比較する
