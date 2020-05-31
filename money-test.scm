@@ -5,22 +5,22 @@
 
 ;; test-multiplication
 (let ((test-name "test-multiplication"))
-  (define five (make-doller 5))
-  (test-equal test-name (make-doller 10) (times five 2))
-  (test-equal test-name (make-doller 15) (times five 3)))
+  (define five (money-doller 5))
+  (test-equal test-name (money-doller 10) (times five 2))
+  (test-equal test-name (money-doller 15) (times five 3)))
 
 ;; test-equality
 (let ((test-name "test-equality"))
-  (test-assert test-name (equal? (make-doller 5) (make-doller 5)))
-  (test-eq test-name #f (equal? (make-doller 5) (make-doller 6)))
-  (test-assert test-name (equal? (make-franc 5) (make-franc 5)))
-  (test-eq test-name #f (equal? (make-franc 5) (make-franc 6)))
-  (test-eq test-name #f (equal? (make-franc 5) (make-doller 5))))
+  (test-assert test-name (equal? (money-doller 5) (money-doller 5)))
+  (test-eq test-name #f (equal? (money-doller 5) (money-doller 6)))
+  (test-assert test-name (equal? (money-franc 5) (money-franc 5)))
+  (test-eq test-name #f (equal? (money-franc 5) (money-franc 6)))
+  (test-eq test-name #f (equal? (money-franc 5) (money-doller 5))))
 
 ;; test-franc-multiplication
 (let ((test-name "test-franc-multiplication"))
-  (define five (make-franc 5))
-  (test-equal test-name (make-franc 10) (times five 2))
-  (test-equal test-name (make-franc 15) (times five 3)))
+  (define five (money-franc 5))
+  (test-equal test-name (money-franc 10) (times five 2))
+  (test-equal test-name (money-franc 15) (times five 3)))
 
 (test-end "money-test")
