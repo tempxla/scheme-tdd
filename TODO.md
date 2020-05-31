@@ -8,7 +8,7 @@
 - [x] $5 * 2 = $10
 - [ ] DollerとFrancの重複
 - [x] equalsの一般化
-- [ ] timesの一般化
+- [x] timesの一般化
 - [x] DollerとFrancを比較する
 - [x] 通貨の概念
 - [ ] test-franc-multiplicationを削除する？
