@@ -1,22 +1,15 @@
-(define-record-type <doller>
-  (make-doller _amount)
-  doller?
-  (_amount doller-amount))
+(define-record-type <money>
+  (make-money _amount _currency)
+  money?
+  (_amount money-amount)
+  (_currency money-currency)
+  )
 
-(define-record-type <franc>
-  (make-franc _amount)
-  franc?
-  (_amount franc-amount))
-
-(define money-doller make-doller)
-(define money-franc make-franc)
+(define (money-doller x) (make-money x "USD"))
+(define (money-franc x) (make-money x "CHF"))
 
 (define (times money x)
-  (cond
-   ((doller? money) (make-doller (* (doller-amount money) x)))
-   ((franc? money) (make-franc (* (franc-amount money) x)))))
+  (make-money (* (money-amount money) x)
+              (money-currency money)))
 
-(define (currency money)
-  (cond
-   ((doller? money) "USD")
-   ((franc? money) "CHF")))
+(define currency money-currency)

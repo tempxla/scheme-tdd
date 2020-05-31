@@ -13,15 +13,7 @@
 (let ((test-name "test-equality"))
   (test-assert test-name (equal? (money-doller 5) (money-doller 5)))
   (test-eq test-name #f (equal? (money-doller 5) (money-doller 6)))
-  (test-assert test-name (equal? (money-franc 5) (money-franc 5)))
-  (test-eq test-name #f (equal? (money-franc 5) (money-franc 6)))
   (test-eq test-name #f (equal? (money-franc 5) (money-doller 5))))
-
-;; test-franc-multiplication
-(let ((test-name "test-franc-multiplication"))
-  (define five (money-franc 5))
-  (test-equal test-name (money-franc 10) (times five 2))
-  (test-equal test-name (money-franc 15) (times five 3)))
 
 ;; test-currency
 (let ((test-name "test-currency"))
