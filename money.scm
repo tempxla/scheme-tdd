@@ -15,3 +15,8 @@
   (cond
    ((doller? money) (make-doller (* (doller-amount money) x)))
    ((franc? money) (make-franc (* (franc-amount money) x)))))
+
+(define (currency money)
+  (cond
+   ((doller? money) "USD")
+   ((franc? money) "CHF")))
