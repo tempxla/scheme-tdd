@@ -8,6 +8,9 @@
   franc?
   (_amount franc-amount))
 
+(define money-doller make-doller)
+(define money-franc make-franc)
+
 (define (times money x)
   (cond
    ((doller? money) (make-doller (* (doller-amount money) x)))
