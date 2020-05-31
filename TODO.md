@@ -6,9 +6,9 @@
 - [x] equals()
 - [ ] 他のオブジェクトとの等価性比較
 - [x] $5 * 2 = $10
-- [ ] __DollerとFrancの重複__
+- [x] DollerとFrancの重複
 - [x] equalsの一般化
 - [x] timesの一般化
 - [x] DollerとFrancを比較する
 - [x] 通貨の概念
-- [ ] test-franc-multiplicationを削除する？
+- [x] test-franc-multiplicationを削除する？
